@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>Ken10 - Portfolio</title>
+    <meta name="description" content="私のポートフォリオサイト">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../css/reset/reset.css">
+    <link rel="stylesheet" href="../../css/portfolio/portfolio.css">
+  </head>
+  <body>
+    <header><!-- ←header開始 -->
+      <div class="container background">
+        <div class="left-top"></div>
+        <div class="portfolio-title-position">
+          <img src="../../images/other-img/header/portfolio-text_1.png" class="title-text">
+        </div>
+        <div class="right-bottom"></div>
+      </div>
+    </header><!-- ←header終了 -->
+    <main>
+      <div class="container">
+        <section id="about">
+          <h1>About</h1>
+          <div class="about-box">
+            <div class="img-position">
+              <img src="../../images/other-img/scenery/kent.jpg">
+            </div>
+            <div class="about-text">
+              <h2>Ken10（けんと）</h2>
+              <p>
+                コードを書くことが好きで、「CodeCamp」にてフロント領域を中心に学んできました。<br>
+                現在は【<span class="font-change">Java</span>と<span class="font-change">JavaScript</span>】を勉強しています。<br>
+                趣味はロードバイク/バドミントン/愛犬のお散歩です。
+              </p>
+            </div>
+          </div>
+        </section>
+        <section id="skills">
+          <h1>Skills</h1>
+          <div class="skill-box">
+            <div class="chart-box">
+              <canvas id="htmlChart"></canvas>
+              <p>
+                HTMLの基本構造について理解していて、JavaScriptとの連動を意識したコーディングまで行えます。<br>
+                「Visual Studio Code」を使用してコーディングしています。
+              </p>
+            </div>
+            <div class="chart-box">
+              <canvas id="cssChart"></canvas>
+              <p>
+                CSSの基本について理解していて、レスポンシブでの対応を考慮した実装も行えます。<br>
+                主要なタグのまとまりごとにレスポンシブ用のコードを記述することで、管理しやすくなるよう心掛けています。<br>
+              </p>
+            </div>
+            <div class="chart-box">
+              <canvas id="javascriptChart"></canvas>
+              <p>
+                ライブラリを使用して動きのあるサイト制作を行えます。<br>
+                【変数/メソッド引数】への理解も持ち合わせています。<br>
+                より高度な実装ができるように勉強中です。
+              </p>
+            </div>
+            <div class="chart-box">
+              <canvas id="javaChart"></canvas>
+              <p>
+                基本的な構造と処理の流れを理解したプログラミングを行えます。<br>
+                DB(PostgresQL)との連動まで可能です。<br>
+                使用しているIDEは「Eclipse」です。
+              </p>
+            </div>
+          </div>
+        </section>
+        <section id="works">
+          <h1>Works</h1>
+          <div class="works-box">
+            <p>
+              制作したサイトをこちらに記載予定。
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="container background">
+        <p><small>Copyright &copy; Ken10の思いの丈</small></p><!-- ←著作権 -->
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="../../js/portfolio.js"></script>
+  </body>
+</html>

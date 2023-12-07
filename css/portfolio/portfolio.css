@@ -1,0 +1,174 @@
+@charset "UTF-8";
+body {
+  position: relative;
+  margin: 0;
+  font-family: "Noto Serif JP", serif, "游ゴシック", YuGothic,
+  "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo,
+  "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; /* font-familyの先頭から順にブラウザごとに可能な書体で表示される(今回で言えば游ゴシックの優先度が一番高い) */
+color: #432;
+line-height: 1.7;
+}
+
+/* common */
+.container{
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* header */
+.left-top {
+  background: rgb(23, 103, 23);
+  height: 20vh;
+  clip-path: circle(10% at 0 0);
+}
+.right-bottom {
+  background: rgb(186, 59, 36);
+  height: 20vh;
+  clip-path: circle(15% at 100% 100%);
+}
+header .background{
+  background: rgb(254, 248, 248);
+}
+.portfolio-title-position {
+  position: relative;
+}
+.title-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* header(responsive) */
+@media(max-width: 700px){
+  .left-top,
+  .right-bottom {
+    height: 10vh;
+  }
+}
+
+/* main */
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 10%;
+  color: rgb(134, 119, 116);
+  font-weight: bold;
+}
+.about-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img-position {
+  margin-right: 10%;
+  padding: 10% 0% 20% 0%;
+}
+.img-position img{
+  border-radius: 50%;
+  width: 50%;
+  margin-left: 60%;
+}
+.about-text {
+  padding:  10% 0% 20% 0%;
+}
+.about-text h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.about-text p {
+  padding-right: 1rem;
+}
+.font-change {
+  font-weight: bold;
+  color: rgba(59, 43, 43, 0.718);
+}
+/* main(responsive) */
+@media(max-width: 700px){
+  h1 {
+    font-size: 2.3rem;
+  }
+  .about-box {
+    flex-direction: column;
+    padding: 10%;
+  }
+  .img-position {
+    padding: 0;
+  }
+  .img-position img {
+    width: 40%;
+    margin-bottom: 10%;
+    margin-left: 35%;
+  }
+  .about-text {
+    padding:  0 0 15% 0;
+  }
+  .about-text h2 {
+    text-align: center;
+  }
+  .about-text p {
+    padding-right: 0;
+  }
+}
+
+/* skills */
+#skills{
+  background: rgb(254, 248, 248);
+}
+.skill-box {
+  display: flex;
+  padding: 10%;
+  flex-wrap: wrap;
+}
+.chart-box {
+  margin: 0 auto; 
+  width: 40%;
+  padding-bottom: 20%;
+  background: rgba(255, 255, 255, 0.805);
+  margin-bottom: 10%;
+}
+.chart-box p {
+  margin: 0 auto;
+  padding: 10%;
+}
+#htmlChart {
+  margin-top: 10%;
+}
+#cssChart {
+  margin-top: 10%;
+}
+#javascriptChart {
+  margin-top: 10%;
+}
+#javaChart {
+  margin-top: 10%;
+}
+/* skills(responsive) */
+@media(max-width: 700px){
+  .skill-box {
+    flex-direction: column;
+  }
+  .chart-box {
+    width: 90%;
+  }
+}
+
+/* works */
+.works-box p {
+  padding: 3% 0 10% 0;
+  text-align: center;
+}
+
+/* footer */
+footer .background {
+  background: rgb(254, 248, 248);
+  padding: 2% 0;
+}
+footer p {
+  text-align: center;
+}
+/* footer(responsive) */
+@media(max-width: 700px){
+  footer .background{
+    padding: 3% 0;
+  }
+}
